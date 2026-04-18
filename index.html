@@ -116,22 +116,56 @@
         }
 
         .info-layer {
-            position: absolute; top: 145px; left: 25px; width: 350px; z-index: 10; color: #000;
-        }
+    position: absolute; 
+    top: 130px; 
+    left: 35px; 
+    /* এখানে উইডথ কমিয়ে দিন যাতে ছবির সাথে ধাক্কা না লাগে */
+    width: 230px; 
+    z-index: 10; 
+    color: #000;
+}
+
+.value { 
+    font-weight: 500; 
+    font-size: 14px; 
+    display: block;
+    /* নাম বড় হলে যাতে ভেঙে নিচে নামে এবং ছবির উপরে না ওঠে */
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    line-height: 1.2;
+}
 
         .card-id-header {
-            text-align: center; font-weight: bold; font-size: 17px; margin-bottom: 20px;
-            line-height: 1.2; color: #7a7a7a;
-        }
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 15px; 
+    line-height: 1.2; 
+    color: #7a7a7a;
+
+    /* নিচের এই তিনটি লাইন দিয়ে আপনি পজিশন কন্ট্রোল করবেন */
+    position: relative; 
+    top: 15px;   /* এটি পরিবর্তন করলে উপরে বা নিচে নামবে */
+    left: 15px;  /* এটি পরিবর্তন করলে ডানে বা বামে সরবে */
+    
+    margin-bottom: 20px; 
+}
 
         .detail-row { margin-bottom: 8px; line-height: 1.1; }
         .label { font-weight: 800; font-size: 12px; display: block; }
         .value { font-weight: 500; font-size: 14px; display: block; }
 
         .footer-layer {
-            position: absolute; bottom: 0; width: 100%; background-color: #000;
-            color: #fff; text-align: center; padding: 10px; font-weight: bold; z-index: 20;
-        }
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #000;
+    color: #fff; 
+    text-align: center; 
+    padding: 5px 0; /* প্যাডিং কমিয়ে দেওয়া হয়েছে */
+    font-size: 14px; /* লেখার সাইজ চাইলে সেট করতে পারেন */
+    font-weight: bold; 
+    z-index: 20;
+}
     </style>
 </head>
 <body>
@@ -168,14 +202,9 @@
                 CARD NO: 2024-011-1265<br>175/027
             </div>
 
-            <div class="flex flex-col border-b border-gray-200 py-3 sm:flex-row sm:items-center">
-  <span class="w-32 text-xs font-semibold tracking-wider text-gray-500 uppercase">
-    Name
-  </span>
-  
-  <span class="mt-1 text-sm font-medium text-gray-900 sm:mt-0">
-    UMESH THAPA ALI CHOWDHURY HOSSAIN
-  </span>
+            <div class="detail-row">
+    <span class="label">NAME:</span>
+    <span class="value">AHNMED ALI SAGOR ALI AHNMED ALI SAGOR</span>
 </div>
             <div class="detail-row"><span class="label">IQAMA/ID NO:</span><span class="value">2622013825</span></div>
             <div class="detail-row"><span class="label">ISSUE DATE:</span><span class="value">31-March-2026</span></div>
@@ -183,7 +212,7 @@
             <div class="detail-row"><span class="label">COMPANY:</span><span class="value">JUFFALY</span></div>
             <div class="detail-row"><span class="label">MODEL:</span><span class="value">N/A</span></div>
             <div class="detail-row"><span class="label">REF/JOB NO:</span><span class="value">2024-011-1265-175</span></div>
-            <div class="detail-row"><span class="label">ISSUANCE NO:</span><span class="label">01</span></div>
+            <span class="label">ISSUANCE NO:</span><span class="value">01</span>
             <div class="detail-row"><span class="label">CERTIFICATITION:</span><span class="value">REACH TRUCK OPERATOR</span></div>
             <div class="detail-row"><span class="label">ASSESSOR:</span><span class="value">MR. Farhan Khan</span></div>
             <div class="detail-row"><span class="label">CR NUMBER:</span><span class="value">1010665690</span></div>
