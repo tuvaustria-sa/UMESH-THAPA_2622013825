@@ -21,7 +21,17 @@
             min-height: 100vh;
         }
 
-        .card-container {
+    .verify-title {
+    position: absolute;
+    top: 60px;         /* ওপর থেকে দূরত্ব */
+    left: 25px;        /* বাম দিক থেকে দূরত্ব */
+    font-size: 20px;   /* লেখার সাইজ */
+    font-weight: bold;
+    color: #444;       /* আপনার পছন্দমতো রঙ দিতে পারেন */
+    z-index: 10;       /* যাতে এটি ব্যাকগ্রাউন্ডের উপরে থাকে */
+    font-family: 'Segoe UI', Arial, sans-serif;
+      }        
+   .card-container {
             width: 400px;
             height: 650px;
             background-color: #fff;
@@ -196,6 +206,9 @@
         </div>
 
         <div class="background-layer"></div>
+<div class="verify-title">Verify Card/Certificate</div>
+
+<div class="background-layer"></div>
 
         <div class="info-layer">
             <div class="card-id-header">
